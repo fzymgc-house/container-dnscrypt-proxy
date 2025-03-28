@@ -10,6 +10,4 @@ LABEL maintainer="fzymgc-house"
 
 RUN apk update && apk add --no-cache dnscrypt-proxy
 
-COPY ./dnscrypt-proxy.toml /etc/dnscrypt-proxy/dnscrypt-proxy.toml
-
 CMD ["dnscrypt-proxy", "-config", "/etc/dnscrypt-proxy/dnscrypt-proxy.toml"]
